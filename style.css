@@ -1,0 +1,177 @@
+/* General style */
+body{
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+/* Header */
+header{
+    background: #6d6b6b;
+    padding: 20px;
+    font-size: 24px;
+}
+
+/* Section */
+section {
+    margin: 50px;
+    padding: 10px;
+    background: #6d6b6d;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background: #6d6b6b;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+/* Navigation Bar */ 
+nav {
+    background: #1f1f1f;
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background: #3e3c3c;
+    border-radius: 5px;
+}
+
+/* Profile Section */
+#profile {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#profile img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-bottom: 10px;
+}
+
+/* Projects Section */
+#projects {
+    text-align: center;
+    margin: 50px;
+}
+
+.project-card {
+    background: black;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    background: #3e3c3c;
+}
+
+/* Contact Section */
+#contact {
+    text-align: center;
+    margin: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input,
+textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    background: #ff9800;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #e68900;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 90%;
+    }
+
+    input,
+    textarea {
+        width: 90%;
+    }
+}
+
+
+/* Smooth Fade-In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#profile,
+#projects,
+#contact {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Hover Effects */
+button:hover {
+    transform: scale(1.05);
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
